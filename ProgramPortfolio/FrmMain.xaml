@@ -1,0 +1,237 @@
+﻿<Window
+	x:Class="ProgramPortfolio.FrmMain"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ZoomAndPan="clr-namespace:ZoomAndPan;assembly=ZoomAndPan"
+	xmlns:local="clr-namespace:ProgramPortfolio"
+	xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+	Title="포트폴리오"
+	Width="1280"
+	Height="700"
+	Closing="Window_Closing"
+	Loaded="Window_Loaded"
+	PreviewMouseDown="Window_PreviewMouseDown"
+	PreviewMouseUp="Window_PreviewMouseUp"
+	WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<Polygon
+			x:Key="PrevPolygon"
+			Fill="White"
+			Points="0,5 10,10 10,0"
+			Stroke="Black"
+			StrokeThickness="2" />
+		<Polygon
+			x:Key="NextPolygon"
+			Fill="White"
+			Points="0,0 0,10 10,5"
+			Stroke="Black"
+			StrokeThickness="2" />
+		<local:LanguageTypeConverter x:Key="objLanguageTypeConverter" />
+	</Window.Resources>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="500" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="40" />
+			<RowDefinition Height="2*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="60" />
+		</Grid.RowDefinitions>
+		<xctk:MagnifierManager.Magnifier>
+			<xctk:Magnifier
+				x:Name="ctrlMagnifier"
+				Grid.Row="0"
+				Grid.RowSpan="5"
+				Grid.Column="0"
+				Grid.ColumnSpan="2"
+				Width="700"
+				Height="700"
+				Background="White"
+				BorderBrush="Orange"
+				BorderThickness="3"
+				FrameType="Circle"
+				ZoomFactor="0.3" />
+		</xctk:MagnifierManager.Magnifier>
+		<TextBlock
+			Grid.Row="0"
+			Grid.ColumnSpan="2"
+			Margin="10,0,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Center"
+			FontSize="16"
+			Text="1. Shift + 마우스 휠 = 줌인 + 줌아웃, 2. 마우스 왼쪽 더블클릭 = 화면 맞춤, 3. 마우스 오른쪽 클릭 = 돋보기" />
+		<TextBlock
+			Grid.Row="1"
+			Grid.ColumnSpan="2"
+			Margin="10,0,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Center"
+			Text="정렬 :" />
+		<ComboBox
+			Name="ctrlCmbSort"
+			Grid.Row="1"
+			Grid.ColumnSpan="2"
+			Width="150"
+			Margin="50,0,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Center"
+			SelectionChanged="ctrlCmbSort_SelectionChanged" />
+		<TextBlock
+			Grid.Row="1"
+			Grid.ColumnSpan="2"
+			Margin="260,0,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Center"
+			Text="언어 :" />
+		<ComboBox
+			Name="ctrlCmbLanguage"
+			Grid.Row="1"
+			Grid.ColumnSpan="2"
+			Width="120"
+			Margin="300,0,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Center"
+			SelectionChanged="ctrlCmbLanguage_SelectionChanged" />
+		<DataGrid
+			Name="ctrlGrdProgramList"
+			Grid.Row="2"
+			Grid.RowSpan="3"
+			Margin="5,5,5,5"
+			HorizontalAlignment="Stretch"
+			HorizontalContentAlignment="Stretch"
+			AlternatingRowBackground="Beige"
+			AlternationCount="2"
+			CanUserReorderColumns="False"
+			FontSize="11"
+			HorizontalScrollBarVisibility="Auto"
+			IsReadOnly="True"
+			ItemsSource="{Binding ProgramInfoClass}"
+			SelectionChanged="ctrlGrdProgramList_SelectionChanged"
+			SelectionMode="Single"
+			VerticalScrollBarVisibility="Auto"
+			VirtualizingStackPanel.VirtualizationMode="Recycling">
+			<DataGrid.Columns>
+				<DataGridTemplateColumn
+					Width="140"
+					Header="프로젝트명"
+					IsReadOnly="True">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding M_strProjectName}" TextAlignment="Center" />
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+				<DataGridTemplateColumn
+					Width="220"
+					Header="프로그램명"
+					IsReadOnly="True">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding M_strName}" TextAlignment="Center" />
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+				<DataGridTemplateColumn
+					Width="60"
+					Header="언어"
+					IsReadOnly="True">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding M_objLanguageType, Converter={StaticResource objLanguageTypeConverter}}" TextAlignment="Center" />
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
+			</DataGrid.Columns>
+		</DataGrid>
+		<ScrollViewer
+			Name="ctrlScroll"
+			Grid.Row="2"
+			Grid.Column="1"
+			Margin="10"
+			CanContentScroll="True"
+			HorizontalScrollBarVisibility="Auto"
+			PreviewMouseDown="ctrlScroll_MouseDown"
+			PreviewMouseMove="ctrlScroll_MouseMove"
+			PreviewMouseUp="ctrlScroll_MouseUp"
+			PreviewMouseWheel="ctrlScroll_MouseWheel"
+			VerticalScrollBarVisibility="Auto">
+			<ZoomAndPan:ZoomAndPanControl
+				Name="ctrlZoom"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				HorizontalContentAlignment="Left"
+				VerticalContentAlignment="Top"
+				AnimationDuration="0.5"
+				ClipToBounds="True"
+				IsMouseWheelScrollingEnabled="True"
+				MaxContentScale="20.0"
+				MinContentScale="0.5">
+				<Grid Name="ctrlGridMain" Background="White">
+					<Image Name="ctrlImageProgram" />
+					<!--
+						This Canvas and Border are used as a very simple way to render a drag rectangle that the user
+						uses to specify an area to zoom in on.
+					-->
+					<Canvas Name="ctrlCanvasDrag" Visibility="Collapsed">
+						<Border
+							Background="Silver"
+							BorderBrush="Black"
+							BorderThickness="1"
+							CornerRadius="1"
+							Opacity="0" />
+					</Canvas>
+				</Grid>
+			</ZoomAndPan:ZoomAndPanControl>
+		</ScrollViewer>
+		<Button
+			Name="ctrlBtnPrevImage"
+			Grid.Row="4"
+			Grid.Column="1"
+			Width="48"
+			Height="48"
+			Margin="0,0,110,0"
+			HorizontalAlignment="Center"
+			Click="ctrlBtnPrevImage_Click"
+			Content="{StaticResource PrevPolygon}" />
+		<TextBlock
+			Name="ctrlTblImageIndex"
+			Grid.Row="4"
+			Grid.Column="1"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			FontSize="24"
+			Text="1/2" />
+		<Button
+			Name="ctrlBtnNextImage"
+			Grid.Row="4"
+			Grid.Column="1"
+			Width="48"
+			Height="48"
+			Margin="110,0,0,0"
+			HorizontalAlignment="Center"
+			Click="ctrlBtnNextImage_Click"
+			Content="{StaticResource NextPolygon}" />
+		<local:GridExpander
+			x:Name="ctrlExpDetail"
+			Grid.Row="3"
+			Grid.Column="1"
+			Collapsed="ctrlExpDetail_Collapsed"
+			Expanded="ctrlExpDetail_Expanded"
+			Header="상세정보"
+			IsExpanded="True">
+			<Grid>
+				<TextBox
+					Name="ctrlTbxDetail"
+					Margin="5"
+					VerticalContentAlignment="Top"
+					HorizontalScrollBarVisibility="Auto"
+					IsReadOnly="True"
+					IsUndoEnabled="False"
+					VerticalScrollBarVisibility="Auto" />
+			</Grid>
+		</local:GridExpander>
+	</Grid>
+</Window>

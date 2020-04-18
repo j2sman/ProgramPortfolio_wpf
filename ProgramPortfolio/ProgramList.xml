@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ProgramList>
+	<!--시간 순으로 나열해야 함-->
+	<Program Name="X-TRAINER" ProjectName="X-TRAINER" Language="CPlusPlus" DetailInfoLink="XTrainer.txt" >
+		<ImageLink ImageName="XTrainer1.png" />
+	</Program>
+	<Program Name="SmithChart" ProjectName="SmithChart" Language="CPlusPlus" DetailInfoLink="SmithChart.txt" >
+		<ImageLink ImageName="SmithChart1.png" />
+	</Program>
+	<Program Name="항공 폴리텍대학 교육용 프로그램" ProjectName="Sacheon" Language="CPlusPlus" DetailInfoLink="Sacheon.txt" >
+		<ImageLink ImageName="Sacheon1.png" />
+	</Program>
+	<Program Name="ATDMBFieldTest" ProjectName="ATDMBFieldTest" Language="CSharp" DetailInfoLink="ATDMBFieldTest.txt" >
+		<ImageLink ImageName="ATDMBFieldTest1.png" />
+	</Program>
+	<Program Name="전력사용량 모니터링 프로그램" ProjectName="PowerMeter" Language="CSharp" DetailInfoLink="PowerMeter.txt" >
+		<ImageLink ImageName="PowerMeter1.png" />
+	</Program>
+	<Program Name="TRS Fading &amp; Coverage Analyzer" ProjectName="TRSTest" Language="CSharp" DetailInfoLink="TRSTest.txt" >
+		<ImageLink ImageName="TRSTest1.png" />
+	</Program>
+	<Program Name="USN 무선통신 환경 분석기 프로그램" ProjectName="USNAnalyzer" Language="CSharp" DetailInfoLink="USNAnalyzer.txt" >
+		<ImageLink ImageName="USNAnalyzer1.png" />
+	</Program>
+	<Program Name="무선망 Chart 생성 프로그램" ProjectName="WirelessChart" Language="CSharp" DetailInfoLink="WirelessChart.txt" >
+		<ImageLink ImageName="WirelessChart1.png" />
+	</Program>
+	<Program Name="FieldTest" ProjectName="FieldTest" Language="CSharp" DetailInfoLink="FieldTest.txt" >
+		<ImageLink ImageName="FieldTest1.png" />
+	</Program>
+	<Program Name="Incumbent Test" ProjectName="Incumbent" Language="CSharp" DetailInfoLink="Incumbent.txt" >
+		<ImageLink ImageName="Incumbent1.png" />
+	</Program>
+	<Program Name="고령친화사업 프로그램" ProjectName="ESenior" Language="CSharp" DetailInfoLink="ESenior.txt" >
+		<ImageLink ImageName="ESenior1.png" />
+		<ImageLink ImageName="ESenior2.png" />
+	</Program>
+	<Program Name="Terminal Block Inspector" ProjectName="TBInspector" Language="CSharp" DetailInfoLink="TBInspector.txt" >
+		<ImageLink ImageName="TBInspector1.png" />
+		<ImageLink ImageName="TBInspector2.png" />
+	</Program>
+	<Program Name="Motion 출하검사 장비 프로그램" ProjectName="FinalInspection" Language="CSharp" DetailInfoLink="FinalInspection.txt" >
+		<ImageLink ImageName="FinalInspection1.png" />
+	</Program>
+	<Program Name="PERMS(원격검침시스템)" ProjectName="PERMS" Language="CSharp" DetailInfoLink="PERMS.txt" >
+		<ImageLink ImageName="PERMS1.png" />
+		<ImageLink ImageName="PERMS2.png" />
+	</Program>
+	<Program Name="NIPC KISS UI(보안장비 설정 프로그램)" ProjectName="NIPC" Language="CSharp" DetailInfoLink="NIPC.txt" >
+		<ImageLink ImageName="NIPC1.png" />
+		<ImageLink ImageName="NIPC2.png" />
+	</Program>
+  <Program Name="MMS Client(KEMA 인증용)" ProjectName="MMSClient" Language="CPlusPlus" DetailInfoLink="MMSClient.txt" >
+	<ImageLink ImageName="MMSClient1.png" />
+	<ImageLink ImageName="MMSClient2.png" />
+  </Program>
+  <Program Name="장비현황 모니터링" ProjectName="TomatoMonitorDevice" Language="CSharp" DetailInfoLink="TomatoMonitorDevice.txt" >
+	<ImageLink ImageName="TomatoMonitorDevice1.png" />
+  </Program>
+  <Program Name="매출현황 모니터링" ProjectName="TomatoMonitorSales" Language="CSharp" DetailInfoLink="TomatoMonitorSales.txt" >
+	<ImageLink ImageName="TomatoMonitorSales1.png" />
+  </Program>
+	<Program Name="TomatoJobManager" ProjectName="TomatoJobManager" Language="CSharp" DetailInfoLink="TomatoJobManager.txt" >
+		<ImageLink ImageName="TomatoJobManager1.png" />
+	</Program>
+	<Program Name="TomatoDeviceManager" ProjectName="TomatoDeviceManager" Language="CSharp" DetailInfoLink="TomatoDeviceManager.txt" >
+		<ImageLink ImageName="TomatoDeviceManager1.png" />
+	</Program>
+	<Program Name="EMSPanoramaSDK" ProjectName="EMSPanoramaSDK" Language="CPlusPlus" DetailInfoLink="EMSPanoramaSDK.txt" >
+		<ImageLink ImageName="EMSPanoramaSDK1.png" />
+	</Program>
+	<Program Name="DaemonSocketV2" ProjectName="DaemonSocketV2" Language="CSharp" DetailInfoLink="DaemonSocketV2.txt" >
+		<ImageLink ImageName="DaemonSocketV21.png" />
+	</Program>
+	<Program Name="ConfirmLogFile" ProjectName="ConfirmLogFile" Language="CSharp" DetailInfoLink="ConfirmLogFile.txt" >
+		<ImageLink ImageName="ConfirmLogFile1.png" />
+	</Program>
+	<Program Name="DiagnosticsNOB" ProjectName="DiagnosticsNOB" Language="CSharp" DetailInfoLink="DiagnosticsNOB.txt" >
+		<ImageLink ImageName="DiagnosticsNOB1.png" />
+		<ImageLink ImageName="DiagnosticsNOB2.png" />
+	</Program>
+	<Program Name="NateOnBiz" ProjectName="NateOnBiz" Language="CPlusPlus" DetailInfoLink="NateOnBiz.txt" >
+		<ImageLink ImageName="NateOnBiz1.png" />
+	</Program>
+	<Program Name="NOBProcessStat" ProjectName="NOBProcessStat" Language="CSharp" DetailInfoLink="NOBProcessStat.txt" >
+		<ImageLink ImageName="NOBProcessStat1.png" />
+		<ImageLink ImageName="NOBProcessStat2.png" />
+	</Program>
+	<Program Name="NOBSvcMonitoring" ProjectName="NOBSvcMonitoring" Language="CSharp" DetailInfoLink="NOBSvcMonitoring.txt" >
+		<ImageLink ImageName="NOBSvcMonitoring.png" />
+	</Program>
+	<Program Name="NOBUserInfo" ProjectName="NOBUserInfo" Language="CSharp" DetailInfoLink="NOBUserInfo.txt" >
+		<ImageLink ImageName="NOBUserInfo1.png" />
+		<ImageLink ImageName="NOBUserInfo2.png" />
+	</Program>
+	<Program Name="NOBWasMonitoring" ProjectName="NOBWasMonitoring" Language="CSharp" DetailInfoLink="NOBWasMonitoring.txt" >
+		<ImageLink ImageName="NOBWasMonitoring1.png" />
+		<ImageLink ImageName="NOBWasMonitoring2.png" />
+		<ImageLink ImageName="NOBWasMonitoring3.png" />
+	</Program>
+</ProgramList>

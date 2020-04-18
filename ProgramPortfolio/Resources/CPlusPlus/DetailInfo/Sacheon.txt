@@ -1,0 +1,2 @@
+Fuel, Warning, Electrical, Air Conditional System등 항공기 기능 설명을 위한 교육프로그램입니다.
+자체 제작된 기기와 연동하여 기기에 적용된 시나리오 별로 기능 설명을 이룹니다.

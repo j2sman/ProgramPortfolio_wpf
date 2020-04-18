@@ -1,0 +1,1 @@
+T-DMB 및 AT-DMB 전파측정을 위한 프로그램으로 자체적으로 쓰이고 있는 FieldTest(Version 2)와 유사합니다.

@@ -1,0 +1,2 @@
+자체제작된 X-Link DSO(Digital Storage Oscilloscope) 기기연동을 위한 프로그램으로
+실시간으로 측정된 파형값을 표시해 줍니다.

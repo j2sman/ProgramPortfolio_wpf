@@ -1,0 +1,13 @@
+﻿1. Image 및 상세설명 Text 추가
+
+2. ProgramList.xml 편집
+	- Name = 화면에 표시될 명칭
+	- ProjectName = Project명
+	- Language = 언어(Resources폴더 + ProgramLanguage Class와 연계됨)
+	- DetailInfoLink = 상세정보가 담긴 Text파일명(Resources폴더 내부. 다수 불가능)
+	- ImageLink = 이미지 파일명(Resources폴더 내부. 다수 가능)
+
+	Ex)
+	<Program Name="X-TRAINER" ProjectName="X-TRAINER" Language="CPlusPlus" DetailInfoLink="XTrainer.txt" >
+		<ImageLink ImageName="XTrainer1.png" />
+	</Program>

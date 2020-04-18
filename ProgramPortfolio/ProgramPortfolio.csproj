@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CA333E3-4C52-4E6B-975B-84DE4E80FFF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgramPortfolio</RootNamespace>
+    <AssemblyName>ProgramPortfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Result\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>..\Result\Debug\ProgramPortfolio.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Result\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>..\Result\Release\ProgramPortfolio.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ZoomAndPan">
+      <HintPath>Resources\ZoomAndPan.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="FrmMain_Zoom.cs" />
+    <Compile Include="Type\InterpretClass.cs" />
+    <Compile Include="Type\LanguageTypeConverter.cs" />
+    <Compile Include="Type\ProgramInfoSort.cs" />
+    <Compile Include="Type\ProgramSortType.cs" />
+    <Compile Include="UserControl\GridExpander.cs" />
+    <Page Include="Assets\ModernUI.MainTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\ModernUI.ModernTabTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FrmMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type\ProgramLanguage.cs" />
+    <Compile Include="Type\ProgramInfoClass.cs" />
+    <Compile Include="FrmMain.xaml.cs">
+      <DependentUpon>FrmMain.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Program갱신방법.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ProgramList.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\ATDMBFieldTest.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\ESenior.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\FieldTest.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\FinalInspection.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\Incumbent.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\NIPC.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\PERMS.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\PowerMeter.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\TBInspector.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\TRSTest.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\USNAnalyzer.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\WirelessChart.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\ATDMBFieldTest1.png" />
+    <Resource Include="Resources\CSharp\Images\ESenior1.png" />
+    <Resource Include="Resources\CSharp\Images\ESenior2.png" />
+    <Resource Include="Resources\CSharp\Images\FieldTest1.png" />
+    <Resource Include="Resources\CSharp\Images\FinalInspection1.png" />
+    <Resource Include="Resources\CSharp\Images\Incumbent1.png" />
+    <Resource Include="Resources\CSharp\Images\NIPC1.png" />
+    <Resource Include="Resources\CSharp\Images\NIPC2.png" />
+    <Resource Include="Resources\CSharp\Images\PERMS1.png" />
+    <Resource Include="Resources\CSharp\Images\PERMS2.png" />
+    <Resource Include="Resources\CSharp\Images\PowerMeter1.png" />
+    <Resource Include="Resources\CSharp\Images\TBInspector1.png" />
+    <Resource Include="Resources\CSharp\Images\TBInspector2.png" />
+    <Resource Include="Resources\CSharp\Images\TRSTest1.png" />
+    <Resource Include="Resources\CSharp\Images\USNAnalyzer1.png" />
+    <Resource Include="Resources\CSharp\Images\WirelessChart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\DetailInfo\Sacheon.txt" />
+    <Resource Include="Resources\CPlusPlus\DetailInfo\SmithChart.txt" />
+    <Resource Include="Resources\CPlusPlus\DetailInfo\XTrainer.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\Images\Sacheon1.PNG" />
+    <Resource Include="Resources\CPlusPlus\Images\SmithChart1.png" />
+    <Resource Include="Resources\CPlusPlus\Images\XTrainer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\Images\MMSClient1.png" />
+    <Resource Include="Resources\CPlusPlus\Images\MMSClient2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\DetailInfo\MMSClient.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\TomatoMonitorDevice.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\TomatoMonitorSales.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\TomatoMonitorDevice1.png" />
+    <Resource Include="Resources\CSharp\Images\TomatoMonitorSales1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\TomatoPortingPCFS1.png" />
+    <Resource Include="Resources\CSharp\Images\TomatoPortingPCFS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\TomatoPortingPCFS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\TomatoPortingPCFS3.png" />
+    <Resource Include="Resources\CSharp\Images\TomatoPortingPCFS4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\TomatoDeviceManager1.png" />
+    <Resource Include="Resources\CSharp\Images\TomatoJobManager1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\TomatoDeviceManager.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\TomatoJobManager.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\DetailInfo\EMSPanoramaSDK.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\Images\EMSPanoramaSDK1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\DaemonSocketV2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\DaemonSocketV21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\DetailInfo\NateOnBiz.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\ConfirmLogFile.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\NOBProcessStat.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\NOBSvcMonitoring.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\NOBUserInfo.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\NOBWasMonitoring.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\ConfirmLogFile1.png" />
+    <Resource Include="Resources\CSharp\Images\NOBProcessStat1.png" />
+    <Resource Include="Resources\CSharp\Images\NOBProcessStat2.png" />
+    <Resource Include="Resources\CSharp\Images\NOBSvcMonitoring.png" />
+    <Resource Include="Resources\CSharp\Images\NOBUserInfo1.png" />
+    <Resource Include="Resources\CSharp\Images\NOBUserInfo2.png" />
+    <Resource Include="Resources\CSharp\Images\NOBWasMonitoring1.png" />
+    <Resource Include="Resources\CSharp\Images\NOBWasMonitoring2.png" />
+    <Resource Include="Resources\CSharp\Images\NOBWasMonitoring3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CPlusPlus\Images\NateOnBiz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\DiagnosticsNOB.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\DiagnosticsNOB1.png" />
+    <Resource Include="Resources\CSharp\Images\DiagnosticsNOB2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.4.0.2\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.4.0.2\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.3.3\build\Costura.Fody.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
