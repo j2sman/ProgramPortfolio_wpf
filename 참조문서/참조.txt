@@ -1,0 +1,8 @@
+Nuget 경로 관련
+ - sln 폴더에 NuGet.config파일을 같이 위치시킨후 폴더 지정(C:\Library\NugetPackages)
+
+Library 폴더 관련
+ - C드라이브 포맷하는 경우를 대비하여 C드라이브에 직접 저장하는 방식이 아닌 D:\Library에 생성후 심볼릭 링크를 지정하는 형태로 저장(mklink_library.bat 참조)
+   1) D:\Library 폴더 생성
+   2) mklink_library.bat 실행
+   3) C:\Library 폴더 생성되었는지 확인
