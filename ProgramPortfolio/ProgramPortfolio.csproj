@@ -281,6 +281,22 @@
     <Resource Include="Resources\CSharp\Images\DiagnosticsNOB1.png" />
     <Resource Include="Resources\CSharp\Images\DiagnosticsNOB2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\DetailInfo\AXP365_AdminClient.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\AXP365_AdminServer.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\BTrade.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\Galaxy_AdminClient.txt" />
+    <Resource Include="Resources\CSharp\DetailInfo\Galaxy_AdminServer.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSharp\Images\AXP365_AdminClient1.png" />
+    <Resource Include="Resources\CSharp\Images\AXP365_AdminClient2.png" />
+    <Resource Include="Resources\CSharp\Images\AXP365_AdminServer1.png" />
+    <Resource Include="Resources\CSharp\Images\BTrade1.png" />
+    <Resource Include="Resources\CSharp\Images\Galaxy_AdminClient1.png" />
+    <Resource Include="Resources\CSharp\Images\Galaxy_AdminClient2.png" />
+    <Resource Include="Resources\CSharp\Images\Galaxy_AdminServer1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

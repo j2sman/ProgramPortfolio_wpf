@@ -98,4 +98,21 @@
 		<ImageLink ImageName="NOBWasMonitoring2.png" />
 		<ImageLink ImageName="NOBWasMonitoring3.png" />
 	</Program>
+	<Program Name="AXP365 AdminClient" ProjectName="AXP365 AdminClient" Language="CSharp" DetailInfoLink="AXP365_AdminClient.txt" >
+		<ImageLink ImageName="AXP365_AdminClient1.png" />
+		<ImageLink ImageName="AXP365_AdminClient2.png" />
+	</Program>
+	<Program Name="AXP365 AdminServer" ProjectName="AXP365 AdminServer" Language="CSharp" DetailInfoLink="AXP365_AdminServer.txt" >
+		<ImageLink ImageName="AXP365_AdminServer1.png" />
+	</Program>
+	<Program Name="BTrade" ProjectName="BTrade" Language="CSharp" DetailInfoLink="BTrade.txt" >
+		<ImageLink ImageName="BTrade1.png" />
+	</Program>
+	<Program Name="Galaxy AdminClient" ProjectName="Galaxy AdminClient" Language="CSharp" DetailInfoLink="Galaxy_AdminClient.txt" >
+		<ImageLink ImageName="Galaxy_AdminClient1.png" />
+		<ImageLink ImageName="Galaxy_AdminClient2.png" />
+	</Program>
+	<Program Name="Galaxy AdminServer" ProjectName="Galaxy AdminServer" Language="CSharp" DetailInfoLink="Galaxy_AdminServer.txt" >
+		<ImageLink ImageName="Galaxy_AdminServer1.png" />
+	</Program>
 </ProgramList>

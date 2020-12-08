@@ -1,0 +1,2 @@
+비트레이드 거래소 통신 서버입니다
+https://www.btrade.co.kr/main.do

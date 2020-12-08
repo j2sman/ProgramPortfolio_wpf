@@ -1,0 +1,2 @@
+1. C:\Library에 모두 복사
+2. Nuget Packages복원.bat실행
